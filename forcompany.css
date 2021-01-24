@@ -1,0 +1,71 @@
+/.jumbotron {
+	background-color: #4E2F28; 
+	color: #ffffff;
+}
+/* Add a dark blue background color with a little bit see-through */ 
+.navbar {
+	margin-bottom: 0;
+	background-color: #4E2F28;
+	border: 0;
+	font-size: 18px !important;
+	letter-spacing: 2px;
+	opacity: 0.9;
+}
+/* Add light blue color to all navbar links */
+.navbar li a, .navbar .navbar-brand {
+	color: #4E2F28 !important;
+}
+/* On hover, the links will turn white */
+.navbar-nav li a:hover, .navbar-nav li.active a {
+	color: #0000ff !important;
+	background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+	border-color: transparent;
+	color: #fff !important;
+}
+/* Add a dark background color to the footer */
+footer {
+    background-color: #4E2F28;
+    color: #fff;
+    padding: 32px;
+	font-size: 18px;
+	
+}
+
+footer .glyphicon {
+	font-size: 20px;
+	margin-bottom: 20px;
+	color: #00ccff;
+	opacity: 0.9;
+}
+
+#smile{
+	width: 200px;
+	height: 200px;
+}
+
+#total{
+	background-color: yellow;
+} 
+.button { 
+    position: absolute; 
+top: 80%; 
+left: 45%;
+transform: translate(-50%,-505); 
+display: inline-block; 
+vertical-align: top;  
+padding:2px;  
+text-decoration: none;       
+border:1px solid #ffe4c4 ;
+border: none;
+background: #404040;
+color: #ffffff !important;
+font-weight: 100;
+padding: 10px;
+text-transform: uppercase;
+border-radius: 6px;
+display: inline-block;
+transition: all 0.3s ease 0s;
+}

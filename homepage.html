@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>AirCosmos</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link rel="stylesheet" type= text/css href="forcompany.css">
+	<link rel="stylesheet" type= text/css href="homepage.css">
+	<script src="login.js"> </script>
+	<script src="jump.js"> </script>
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="homepage.html"><span class="glyphicon glyphicon-home"></span>Acasă</a>				
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					
+					<li id = "cart">
+						<a class="navbar-brand" href="cartshow.php"><span class="glyphicon glyphicon-shopping-cart"></span> Coșul tău</a>
+					</li>
+
+
+					<li class="dropdown" id = "new">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"> Logare&nbsp;</span><span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+						  <li><a href="signup.html">Înregistrare</a></li>
+						  
+						  <li class="dropdown-submenu">
+							<a tabindex="-1" href="customersignin.html">Logare</a>
+							<ul class="dropdown-menu">
+                            
+							</ul>
+						  </li>
+						
+						</ul>
+					</li> 
+					  <li class="dropdown" id = "old">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#" ><span class="glyphicon glyphicon-user" id="wuser">Welcome!</span>
+						<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">						
+							<li><a href="#" id="logout">Deconectare</a></li>
+						</ul>
+						</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="jumbotron text-center">
+		<h1>AirCosmos</h1> 
+		<p>“Aici patom o sa fac”!</p> 
+	</div>
+ 
+ <div class="intro">
+     <div class="container">  
+     <a class="button" href="pagina.html">Cumpără bilet</a>     
+</div> 
+</div>  
+		<footer class="container-fluid text-center">
+		<a href="#signUpPage" title="To Top">
+			<span class="glyphicon glyphicon-chevron-up"></span>
+		</a>
+		<p>AirCosmos</p>		
+	</footer>
+</body>
+</html>

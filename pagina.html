@@ -1,0 +1,172 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>AirCosmos Company</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="forcompany.css">
+	<link rel="stylesheet" href="homepage.css">
+	<script src="login.js"> </script>
+	<script src="jump.js"> </script>
+</head>
+<body id="signUpPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="homepage.html"><span class="glyphicon glyphicon-home"></span> Acasă</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+                    <li id = "cart">
+						<a class="navbar-brand" href="cartshow.php"><span class="glyphicon glyphicon-shopping-cart"></span> Coșul</a>
+					</li>
+
+
+					<li class="dropdown" id = "new">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"> Logare&nbsp;</span><span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+						  <li><a href="signup.html">Înregistrare</a></li>
+						  
+						  <li class="dropdown-submenu">
+							<a tabindex="-1" href="customersignin.html">Logare</a>
+							<ul class="dropdown-menu">
+							  </li>
+						
+					
+							</ul>
+						  </li>
+						
+						</ul>
+					</li>
+					  <li class="dropdown" id = "old">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#" ><span class="glyphicon glyphicon-user" id="wuser">Welcome!</span>
+						<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+			            <li><a href="#" id="logout">Deconectare</a></li>
+						</ul>
+						</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+       <div class="jumbotron text-center">
+		<h1>AirCosmos</h1> 
+		<p>Patom pridumaiu!</p> 
+	</div>
+
+	<div class="container" id="homepage">
+		<h1><b>Caută zbor</b></h1>
+		<br /> 
+		<p><b>Alege opțiunile pentru zbor:</b></p>
+		<div class="btn-group btn-group-justified">			
+			<div class="btn-group">
+			<button id="button1" type="button" href="#oneway" class="btn btn-primary">Dus</button>
+			</div>
+			<div class="btn-group">
+			<button id="button2" type="button" href="#roundtrip" class="btn btn-primary">Dus-Întors</button>
+			</div>
+		</div>
+		<hr />
+	<div id="oneway"> 
+		<!--aici sunt optiunile pentru dus-->
+		<form role="form" action="SearchResultOneway.php" method="post">
+		  <div class="row">
+		  <div class="col-sm-6">
+		    <label for="from">Plecare:</label>
+		    <input type="text" class="form-control" id="from" name="from" placeholder="Oraș" required>
+		  </div>
+		  <div class="col-sm-6">
+		    <label for="to">Sosire:</label>
+		    <input type="text" class="form-control" id="to" name="to" placeholder="Oraș" required>
+		  </div>
+		  </div>
+		  <hr >
+		  <div class="row">
+			  <div class="col-sm-6">
+			    <label for="depart">Data plecării:</label>
+			    <input type="date" class="form-control" id="depart" name="depart" required>
+			  </div>
+		  </div>   
+		   <div class="row">
+		   <hr >
+		  <div class="col-sm-6">
+		    <label for="class">Class:</label>
+		    <select class="form-control" name="class">
+		      <option value="Economy">Econom</option>
+		      <option value="Business">Business</option>   
+		    </select>
+		  </div> 
+		  </div> 
+		  <br>
+		  <div class="row">
+		 
+		  <div class="col-sm-6"> 
+		    <label class="radio-inline">
+		      <input type="radio" name="stop" value="nonstop" checked>Non-Stop
+		    </label>
+		  </div> 
+		  <br>
+		  <div class="btn-group btn-group-justified">	
+				<div class="btn-group">
+					<button type="submit" class="btn btn-success">Caută zbor</button>
+				</div>			
+		  </div>
+		</form>
+	</div>
+
+ <!--codul pentru dus-itors-->
+	<div id="roundtrip">
+		<form role="form" action="SearchResultRoundtrip.php" method="post">
+			 <div class="row"> 
+			  <div class="col-sm-6">
+			    <label for="from">Plecare:</label>
+			    <input type="text" class="form-control" id="from" name="from" placeholder="Oraș " required>
+			  </div>
+			  <div class="col-sm-6">
+			    <label for="to">Sosire:</label>
+			    <input type="text" class="form-control" id="to" name="to" placeholder="Oraș" required>
+			  </div>
+			 </div>
+			 <hr >
+			<div class="row">  
+			  <div class="col-sm-6">
+			    <label for="depart">Dată plecare:</label>
+			    <input type="date" class="form-control" id="depart" name="depart" required>
+			  </div>  
+			  <div class="col-sm-6">
+			    <label for="return">Dată retur:</label>
+			    <input type="date" class="form-control" id="return" name="return" required>
+			  </div>
+			 </div>
+			 <hr >
+			 <div class="row">   
+			  <div class="col-sm-6">
+			    <label for="class">Clasa:</label>
+			    <select class="form-control" name="class">
+			      <option value="Economy">Econom</option>
+			      <option value="Business">Business</option>   
+			    </select>
+			  </div> 
+			 </div>
+			 <br>
+			  <div class="form-group">  
+			  <div class="btn-group btn-group-justified">	
+				<div class="btn-group">
+					<button type="submit" class="btn btn-success">Caută zbor</button>
+			</form>
+	</div>
+	</div>	 
+</body> 
+</html>

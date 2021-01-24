@@ -1,0 +1,40 @@
+ 
+ .homepage {
+	background-color: #ffccf1;
+	width: 800px;
+	font-size: 16px;
+	height: 600px;
+}
+
+h4 {
+	font-weight: bold;
+} 
+*,
+*:before, 
+*:after { 
+box-sizing: border-box;
+}  
+h1,h2,h3,h4,h5,h6 {  
+  margin: 0; 
+}
+
+.button { 
+    position: absolute; 
+top: 80%; 
+left: 45%;
+transform: translate(-50%,-505); 
+display: inline-block; 
+vertical-align: top;  
+padding:2px;  
+text-decoration: none;       
+border:1px solid #ffe4c4 ;
+border: none;
+background: #ffccf1;
+color: #ffccf1 !important;
+font-weight: 100;
+padding: 10px;
+text-transform: uppercase;
+border-radius: 6px;
+display: inline-block;
+transition: all 0.3s ease 0s;
+}
